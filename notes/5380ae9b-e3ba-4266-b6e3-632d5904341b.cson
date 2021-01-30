@@ -1,0 +1,20 @@
+createdAt: "2020-09-21T15:51:33.035Z"
+updatedAt: "2020-09-22T10:19:55.445Z"
+type: "MARKDOWN_NOTE"
+folder: "15f3be48394ce6920310"
+title: "Augmenting Visual Slam mapping"
+tags: []
+content: '''
+  # Augmenting Visual Slam mapping
+  
+  ## catkin build heap_mapping workspace
+  
+  1. create a seperate workspace
+  2. manually build libnabo with cmake and install
+  3. comment
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

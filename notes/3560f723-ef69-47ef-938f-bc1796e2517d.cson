@@ -1,0 +1,15 @@
+createdAt: "2020-11-22T18:00:00.125Z"
+updatedAt: "2020-11-22T18:00:40.469Z"
+type: "MARKDOWN_NOTE"
+folder: "15f3be48394ce6920310"
+title: "Segmentation fault reasons summary"
+tags: []
+content: '''
+  # Segmentation fault reasons summary
+  
+  ## Forget to write return expression in the function
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

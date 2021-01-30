@@ -1,0 +1,45 @@
+createdAt: "2021-01-28T16:58:11.507Z"
+updatedAt: "2021-01-28T17:09:35.210Z"
+type: "MARKDOWN_NOTE"
+folder: "1eaf924c241fed8cbd6d"
+title: "Docker guide"
+tags: []
+content: '''
+  # Docker guide
+  
+  ## run a docker image
+  
+  ```bash
+  sudo docker run -it image_id command
+  # or
+  sudo docker run -it repo_name:tag_name command
+  # example
+  sudo docker run -it w29054iu bash
+  sudo docker run -it test_pcl:2 bash
+  
+  ```
+  
+  ## build a dockerfile
+  
+  ```bash
+  # go to the folder where the dockerfile is saved
+  sudo docker build . -t image_name:tag_name
+  ```
+  
+  ## save changes made in image
+  
+  ```bash
+  # when you are still inside the image
+  exit
+  # go back to your local terminal
+  # list all container id
+  sudo docker pc -a
+  # commit
+  sudo docker commit container_id image_name:tag_name
+  # example
+  sudo docker commit w2342uh pcl_test:3
+  ```
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

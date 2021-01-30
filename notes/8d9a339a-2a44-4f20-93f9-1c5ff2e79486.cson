@@ -1,0 +1,145 @@
+createdAt: "2019-05-17T20:15:34.395Z"
+updatedAt: "2020-11-04T14:24:38.174Z"
+type: "MARKDOWN_NOTE"
+folder: "ae97921e7ed0b9c25acb"
+title: "Small tips in C++"
+tags: []
+content: '''
+  # Small tips in C++
+  
+  ## virtual
+  
+  在Parent类中定义成员函数时在函数前标记virtual，能够使Child类中的相同名字的成员函数改变这个函数的内容。当用指针调用Child类的这个成员函数时，可以按照Child类中这个函数的定义使用。
+  
+  ## using
+  
+  #### 使用命名空间
+  using namespace xxx
+  
+  
+  
+  #### 子类使用基类中的私有成员函数
+  
+  子类`T5Derived`用`private`方法继承基类， 因此正常情况下基类中所有成员函数不能被使用。但是在`public`中加上`using T5Base::value;`语句后便可将其变为公共成员函数使用。
+  
+  ```c++
+  class T5Base {
+  public:
+      T5Base() :value(55) {}
+      virtual ~T5Base() {}
+      void test1() { cout << "T5Base test1..." << endl; }
+  protected:
+      int value;
+  };
+   
+  class T5Derived : private T5Base {
+  public:
+      //using T5Base::test1;
+      //using T5Base::value;
+      void test2() { cout << "value is " << value << endl; }
+  };
+  --------------------- 
+  作者：私房菜 
+  来源：CSDN 
+  原文：https://blog.csdn.net/shift_wwx/article/details/78742459 
+  版权声明：本文为博主原创文章，转载请附上博文链接！
+  ```
+  
+  #### 别名
+  
+  using a = _Ty
+  
+  ## std::bitset<int number_of_bin_digit>
+  
+  operators
+  
+  \\& AND
+  
+  | OR
+  
+  ^ XOR
+  
+  ~ NOT
+  
+  member function
+  
+  count() // count the number of 1 in the set
+  
+  ## std::map::emplace(i,j)
+  
+  my_map.emplace(i,j);
+  
+  it creates a mapping from i to j(i is key, j is value):
+  i -> j
+  
+  ## std::shared_ptr<type_name>
+  
+  ## vector::clear()
+  remove all elements in vector and change the length of the vector to 0
+  
+  ## std::unorder_map<type_name_1, typename_2>::at() and []
+  
+  use at(key) to access the value corresponding to key. If the key doesn't exist, it will raise exception. But using [] to access a key will create a new one if it doesn't exist.
+  
+  ## judge whether a key is in map
+  
+  if(map_a.find(key_1) == map_a.end()){}
+    // not found
+  }else{
+    // found
+  }
+  
+  ## Sophus::SE3d() initialize itself as an identity matrix
+  
+  ## find the maximum / minimum value in a std::set
+  
+  because the std::set class by default store value in increasing order, so we can use the following way to get the max/min value:
+  
+  ```c++
+  std::set<double> a = {1,22,4,6};
+  double max = *a.end();
+  double min = *a.begin();
+  ```
+  
+  ## erase element in std::set
+  
+  ```c++
+  setname.erase(iterator_of_element);
+  // iter can be setname.begin()
+  ```
+  
+  ## erase element in std::map
+  
+  ```c++
+  map_name.erase(key_name); // erase by key
+  map_name.erase(iterator_of_element); // erase by iter
+  ```
+  
+  ## convert string to double
+  
+  ```c++
+  std::stod(str);
+  ```
+  
+  ## convert string to char array
+  
+  ```c++
+  string_s.c_str();
+  ```
+  
+  ## split in c++
+  
+  ```c++
+  boost::split(results, line, [](char c) { return c == ' '; }, boost::token_compress_on);
+  ```
+  
+  
+  
+  
+  
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

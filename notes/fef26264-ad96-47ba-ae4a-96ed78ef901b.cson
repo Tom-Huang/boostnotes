@@ -1,0 +1,20 @@
+createdAt: "2019-05-12T16:34:33.149Z"
+updatedAt: "2019-05-12T17:19:28.679Z"
+type: "MARKDOWN_NOTE"
+folder: "15f3be48394ce6920310"
+title: "Computer techniques"
+tags: []
+content: '''
+  # Computer techniques
+  
+  ---
+  
+  ## High CPU usage from qtcreator
+  
+  Solution: Uncheck `Options -> C++ -> Code model -> Ignore pre-compiled headers` in Tools Options in menu.
+  
+  
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

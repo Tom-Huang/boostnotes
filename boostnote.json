@@ -1,0 +1,45 @@
+{
+  "folders": [
+    {
+      "key": "b6d2ce22dabc7a14c1db",
+      "color": "#FF8E00",
+      "name": "C++ Eigen"
+    },
+    {
+      "key": "66ce2e0ff8243dcb0920",
+      "color": "#E8D252",
+      "name": "C++ Ceres"
+    },
+    {
+      "key": "ae97921e7ed0b9c25acb",
+      "color": "#30D5C8",
+      "name": "C++ normal"
+    },
+    {
+      "key": "fe8ca3e5daac9dbcc820",
+      "color": "#2BA5F7",
+      "name": "OpenCV C++"
+    },
+    {
+      "key": "409fe940acf7ee0f64f8",
+      "color": "#1278BD",
+      "name": "Default"
+    },
+    {
+      "key": "15f3be48394ce6920310",
+      "color": "#B013A4",
+      "name": "Bug lists"
+    },
+    {
+      "key": "03e6c80ed17f0024cea6",
+      "color": "#E10051",
+      "name": "ROS"
+    },
+    {
+      "key": "1eaf924c241fed8cbd6d",
+      "color": "#E8D252",
+      "name": "docker"
+    }
+  ],
+  "version": "1.0"
+}
