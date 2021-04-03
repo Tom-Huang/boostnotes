@@ -1,5 +1,5 @@
 createdAt: "2019-05-12T17:19:32.800Z"
-updatedAt: "2021-01-30T12:45:17.373Z"
+updatedAt: "2021-02-01T12:02:34.702Z"
 type: "MARKDOWN_NOTE"
 folder: "15f3be48394ce6920310"
 title: "Linux techniques"
@@ -316,7 +316,7 @@ content: '''
   can be applied to executable and .so file
   
   ```
-  ldd /usr/local/lib/libflann_cpp.so.1.9
+  ldd -d -r /usr/local/lib/libflann_cpp.so.1.9
   ```
   
   ## when you use grep, don't use `*`
@@ -328,6 +328,13 @@ content: '''
   ```bash
   sudo apt-get autoremove --purge libpcl-dev
   ```
+  
+  ## rviz can't open .rviz config file
+  
+  ```bash
+  sudo apt-get dist-upgrade
+  ```
+  also, if in your workspace you install your own version of yaml-cpp, you will have this problem. Just delete the yaml-cpp you install on your own will work
 '''
 linesHighlighted: []
 isStarred: false

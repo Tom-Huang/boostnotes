@@ -1,5 +1,5 @@
 createdAt: "2019-05-17T20:15:34.395Z"
-updatedAt: "2020-11-04T14:24:38.174Z"
+updatedAt: "2021-02-03T12:09:10.279Z"
 type: "MARKDOWN_NOTE"
 folder: "ae97921e7ed0b9c25acb"
 title: "Small tips in C++"
@@ -133,7 +133,20 @@ content: '''
   boost::split(results, line, [](char c) { return c == ' '; }, boost::token_compress_on);
   ```
   
+  ## fixed length string filled with 0 on the left
   
+  ```c++
+  std::stringstream ss;
+  ss << setw(6) << setfill('0') << i;
+  cout << ss.str()+".bin" << std::endl;
+  ```
+  
+  ## ifstream set cursor position
+  
+  ```c++
+  input.seekg(0, std::ios::beg);
+  // std::ios::beg relative to the beginning of the stream
+  ```
   
   
   
